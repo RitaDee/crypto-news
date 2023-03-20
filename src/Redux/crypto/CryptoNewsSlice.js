@@ -1,33 +1,40 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const url = 'https://financialmodelingprep.com/api/v4/crypto_news?page=0&apikey=68cda1598b1c39d73673af76bd5d5f33';
+const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false';
 
 const initialState = {
   list: [],
   isFetching: false,
 };
 
-export const fetchCryptoNews = createAsyncThunk('crypto/fetch', async () => {
+export const fetchCoins = createAsyncThunk('coins/fetch', async () => {
   const response = fetch(url);
   const data = await response.json();
   return data;
 });
 
-const cryptoSlice = createSlice({
-  name: 'crypto',
+const coinsSlice = createSlice({
+  name: 'coins',
   initialState,
+  reducers: {
+    coinsFilter: (state, action) => {
+      const number = action.payload;
+      state.list = state.list.filter((item) => item.current_price > number);
+    },
+  },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchCryptoNews.fulfilled, (state, action) => ({
+      .addCase(fetchCoins.fulfilled, (state, action) => ({
         ...state,
         isFetching: false,
         list: action.payload,
       }))
-      .addCase(fetchCryptoNews.pending, (state) => ({
+      .addCase(fetchCoins.pending, (state) => ({
         ...state,
         isFetching: true,
       }));
   },
 });
 
-export default cryptoSlice.reducer;
+export const { coinsFilter } = coinsSlice.actions;
+export default coinsSlice.reducer;

@@ -1,17 +1,21 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const links = [
-  {
-    to: '/',
-    text: 'Home',
-  },
-  {
-    to: '/details',
-    text: 'Details ',
-  },
-];
+const Navbar = () => (
+  <div>
+    <nav>
+      <h1>Crypto News</h1>
 
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/details">Details</Link>
+        </li>
+      </ul>
+    </nav>
+  </div>
+);
 
-
-export default links;
+export default Navbar;

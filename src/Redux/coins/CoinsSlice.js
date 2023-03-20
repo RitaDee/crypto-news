@@ -19,7 +19,7 @@ const coinsSlice = createSlice({
   reducers: {
     coinsFilter: (state, action) => {
       const number = action.payload;
-      state.list = state.list.filter((item) => item.current_price > number);
+      state.list.filter((item) => item.currentPrice > number);
     },
   },
   extraReducers: (builder) => {

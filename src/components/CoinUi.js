@@ -14,7 +14,11 @@ const CoinUi = ({ picture, id, currentPrice }) => {
   return (
     <div className="CoinUi">
         <div>
-            <NavLink to="/coindetail"
+            <NavLink to="/coindetail">
+                <img alt="coin" src="picture" />
+                <h1>{id}</h1>
+                
+            </NavLink>
         </div>
     </div>
   );

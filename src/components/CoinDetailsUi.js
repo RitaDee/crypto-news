@@ -59,7 +59,7 @@ const coinsDetailsUi = ({
   </div>
 );
 
-coinsDetailsUi.PropTypes = {
+coinsDetailsUi.propTypes = {
   currentPrice: PropTypes.number.isRequired,
   Alltimehigh: PropTypes.number.isRequired,
   Alltimelow: PropTypes.number.isRequired,

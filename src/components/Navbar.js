@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => (
   <div>
     <nav>
-      <h1>Crypto News</h1>
+      <h1>Coins</h1>
 
       <ul>
         <li>

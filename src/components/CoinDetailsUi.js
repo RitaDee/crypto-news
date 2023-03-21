@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const coinsDetailsUi = ({
+const CoinDetailsUi = ({
   currentPrice,
   Alltimehigh,
   Alltimelow,
@@ -59,7 +59,7 @@ const coinsDetailsUi = ({
   </div>
 );
 
-coinsDetailsUi.propTypes = {
+CoinDetailsUi.propTypes = {
   currentPrice: PropTypes.number.isRequired,
   Alltimehigh: PropTypes.number.isRequired,
   Alltimelow: PropTypes.number.isRequired,
@@ -69,4 +69,4 @@ coinsDetailsUi.propTypes = {
   priceChangePerDay: PropTypes.number.isRequired,
 };
 
-export default coinsDetailsUi;
+export default CoinDetailsUi;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Navbar from './components/Navbar';
@@ -14,7 +14,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/details" element={<Details />} />
       </Routes>
-      <Outlet />
     </>
   );
 }

@@ -15,7 +15,7 @@ const CoinDetails = () => {
           availableSupply={coin.availableSupply}
           marketCap={coin.marketCap}
           priceChange1d={coin.priceChange1d}
-          // marketCap={coin.market_data.market_cap.usd}
+          rank={coin.rank}
           // totalVolume={coin.market_data.total_volume}
           // priceChangePerDay={coin.market_data.price_change_24h.usd}
         />

@@ -18,6 +18,7 @@ return (
         key={coins.id}
         name={coins.name}
         image={coins.image}
+        currentPrice={coins.current_price}
         />
       ))
       }

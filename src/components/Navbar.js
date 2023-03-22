@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FcSettings } from 'react-icons/fc';
-import styles from 'src/css/Navbar.module.css';
+import styles from '../styles/Navbar.module.css';
 // import logo from '../images/logo.png';
 import Modal from './Modal';
 

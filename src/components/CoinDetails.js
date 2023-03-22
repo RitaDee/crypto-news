@@ -14,7 +14,7 @@ const CoinDetails = () => {
           currentPrice={coin.price}
           availableSupply={coin.availableSupply}
           marketCap={coin.marketCap}
-          // fullyDilutedValuation={coin.market_data.fully_diluted_valuation.usd}
+          priceChange1d={coin.priceChange1d}
           // marketCap={coin.market_data.market_cap.usd}
           // totalVolume={coin.market_data.total_volume}
           // priceChangePerDay={coin.market_data.price_change_24h.usd}

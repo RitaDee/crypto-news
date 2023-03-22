@@ -5,7 +5,7 @@ const CoinDetailsUi = ({
   currentPrice,
   availableSupply,
   marketCap,
-  // fullyDilutedValuation,
+  priceChange1d,
   // marketCap,
   // totalVolume,
   // priceChangePerDay,
@@ -31,13 +31,15 @@ const CoinDetailsUi = ({
       <div>
         <h1>{marketCap}</h1>
       </div>
-    </div>
-    {/* <div>
-      <h1>All Time Low</h1>
       <div>
-        <h1>{fullyDilutedValuation}</h1>
+        <h1>Price Change Per Day</h1>
+        <div>
+          <h1>{priceChange1d}</h1>
+        </div>
       </div>
     </div>
+
+    {/*
     <div>
       <h1>Market Cap</h1>
       <div>
@@ -63,7 +65,7 @@ CoinDetailsUi.propTypes = {
   currentPrice: PropTypes.number.isRequired,
   availableSupply: PropTypes.number.isRequired,
   marketCap: PropTypes.number.isRequired,
-  // fullyDilutedValuation: PropTypes.number.isRequired,
+  priceChange1d: PropTypes.number.isRequired,
   // marketCap: PropTypes.number.isRequired,
   // totalVolume: PropTypes.number.isRequired,
   // priceChangePerDay: PropTypes.number.isRequired,

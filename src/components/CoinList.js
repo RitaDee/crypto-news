@@ -4,9 +4,6 @@ import CoinUi from './CoinUi';
 
 const CoinList = () => {
   const coins = useSelector((store) => store.coins.list);
-  // const crypto = coins.name;
-  // console.log(crypto);
-  console.log(coins);
 
   return (
     <div className="coinDiv">
@@ -16,10 +13,10 @@ const CoinList = () => {
       <div>
         {coins.map((coin) => (
           <CoinUi
-            id={coins.coin.id}
-            key={coins.coin.id}
-            name={coins.coin.name}
-            image={coins.coin.icon}
+            id={coin.id}
+            key={coin.id}
+            name={coin.name}
+            image={coin.icon}
             currentPrice={coin.price}
           />
         ))}

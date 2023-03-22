@@ -13,7 +13,7 @@ const Details = () => {
   return (
     <>
       <NavDetail />
-      <CoinHeader />
+      {/* <CoinHeader /> */}
       <CoinDetails />
     </>
   );

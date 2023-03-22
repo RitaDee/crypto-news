@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import CoinDetailsUi from './CoinDetailsUi';
 
 const CoinDetails = () => {
-  const coins = useSelector((store) => store.coinsDetails.list);
+  const coin = useSelector((store) => store.coinsDetails.list);
   return (
     <div className="coinDiv">
       <div className="coinHeading">
@@ -11,13 +11,13 @@ const CoinDetails = () => {
       </div>
       <div className="coinsDetails">
         <CoinDetailsUi
-          currentPrice={coins.market_data.price.usd}
-          Alltimehigh={coins.market_data.ath.usd}
-          Alltimelow={coins.market_data.atl.usd}
-          fullyDilutedValuation={coins.market_data.fully_diluted_valuation.usd}
-          marketCap={coins.market_data.market_cap.usd}
-          totalVolume={coins.market_data.total_volume}
-          priceChangePerDay={coins.market_data.price_change_24h.usd}
+          currentPrice={coin.price}
+          Alltimehigh={coin.totalSupply}
+          Alltimelow={coin.availableSupply}
+          // fullyDilutedValuation={coin.market_data.fully_diluted_valuation.usd}
+          // marketCap={coin.market_data.market_cap.usd}
+          // totalVolume={coin.market_data.total_volume}
+          // priceChangePerDay={coin.market_data.price_change_24h.usd}
         />
       </div>
     </div>

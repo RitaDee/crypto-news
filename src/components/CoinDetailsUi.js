@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const CoinDetailsUi = ({
   currentPrice,
-  Alltimehigh,
-  Alltimelow,
-  fullyDilutedValuation,
+  availableSupply,
   marketCap,
-  totalVolume,
-  priceChangePerDay,
+  // fullyDilutedValuation,
+  // marketCap,
+  // totalVolume,
+  // priceChangePerDay,
 }) => (
   <div className="coinD">
     <div>
@@ -21,18 +21,18 @@ const CoinDetailsUi = ({
       </div>
     </div>
     <div>
-      <h1>All Time high</h1>
+      <h1>Available Supply</h1>
       <div>
-        <h1>{Alltimehigh}</h1>
+        <h1>{availableSupply}</h1>
       </div>
     </div>
     <div>
-      <h1>All Time Low</h1>
+      <h1>Market Cap</h1>
       <div>
-        <h1>{Alltimelow}</h1>
+        <h1>{marketCap}</h1>
       </div>
     </div>
-    <div>
+    {/* <div>
       <h1>All Time Low</h1>
       <div>
         <h1>{fullyDilutedValuation}</h1>
@@ -55,18 +55,18 @@ const CoinDetailsUi = ({
     </div>
     <div>
       <h1>{priceChangePerDay}</h1>
-    </div>
+    </div> */}
   </div>
 );
 
 CoinDetailsUi.propTypes = {
   currentPrice: PropTypes.number.isRequired,
-  Alltimehigh: PropTypes.number.isRequired,
-  Alltimelow: PropTypes.number.isRequired,
-  fullyDilutedValuation: PropTypes.number.isRequired,
+  availableSupply: PropTypes.number.isRequired,
   marketCap: PropTypes.number.isRequired,
-  totalVolume: PropTypes.number.isRequired,
-  priceChangePerDay: PropTypes.number.isRequired,
+  // fullyDilutedValuation: PropTypes.number.isRequired,
+  // marketCap: PropTypes.number.isRequired,
+  // totalVolume: PropTypes.number.isRequired,
+  // priceChangePerDay: PropTypes.number.isRequired,
 };
 
 export default CoinDetailsUi;

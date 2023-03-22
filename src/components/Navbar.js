@@ -11,7 +11,7 @@ function Navbar() {
     <>
       <header className={styles.header}>
         <NavLink to="/" className={styles.icondiv}>
-          <img src={logo} alt="planet" className={styles.icon} />
+          {/* <img src={logo} alt="planet" className={styles.icon} /> */}
         </NavLink>
         <span className={styles.navspan}>CRYPTO SAGE</span>
         <nav>

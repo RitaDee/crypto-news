@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import CoinDetails from '../components/CoinDetails';
-import CoinHeader from '../components/CoinHeader';
 import NavDetail from '../components/NavDetail';
 import { fetchCoinsDetail } from '../Redux/details/CoinsDetailsSlice';
 
@@ -13,7 +12,6 @@ const Details = () => {
   return (
     <>
       <NavDetail />
-      {/* <CoinHeader /> */}
       <CoinDetails />
     </>
   );

@@ -7,8 +7,6 @@ const CoinDetailsUi = ({
   marketCap,
   priceChange1d,
   rank,
-  // totalVolume,
-  // priceChangePerDay,
 }) => (
   <div className="coinD">
     <div>
@@ -44,20 +42,6 @@ const CoinDetailsUi = ({
         <h1>{rank}</h1>
       </div>
     </div>
-
-    {/*
-    <div>
-      <h1>Total Volume</h1>
-      <div>
-        <h1>{totalVolume}</h1>
-      </div>
-    </div>
-    <div>
-      <h1>Price Change Per Day</h1>
-    </div>
-    <div>
-      <h1>{priceChangePerDay}</h1>
-    </div> */}
   </div>
 );
 
@@ -67,8 +51,6 @@ CoinDetailsUi.propTypes = {
   marketCap: PropTypes.number.isRequired,
   priceChange1d: PropTypes.number.isRequired,
   rank: PropTypes.number.isRequired,
-  // totalVolume: PropTypes.number.isRequired,
-  // priceChangePerDay: PropTypes.number.isRequired,
 };
 
 export default CoinDetailsUi;

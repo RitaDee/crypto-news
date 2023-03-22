@@ -8,7 +8,6 @@ const initialState = {
 export const fetchCoinsDetail = createAsyncThunk('coinsDetails/fetch', async (id) => {
   const response = await fetch(`https://api.coinstats.app/public/v1/coins/${id}`);
   const data = await response.json();
-  console.log('helo', data);
   return data;
 });
 

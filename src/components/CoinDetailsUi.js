@@ -6,7 +6,7 @@ const CoinDetailsUi = ({
   availableSupply,
   marketCap,
   priceChange1d,
-  // marketCap,
+  rank,
   // totalVolume,
   // priceChangePerDay,
 }) => (
@@ -38,14 +38,14 @@ const CoinDetailsUi = ({
         </div>
       </div>
     </div>
-
-    {/*
     <div>
-      <h1>Market Cap</h1>
+      <h1>Rank</h1>
       <div>
-        <h1>{marketCap}</h1>
+        <h1>{rank}</h1>
       </div>
     </div>
+
+    {/*
     <div>
       <h1>Total Volume</h1>
       <div>
@@ -66,7 +66,7 @@ CoinDetailsUi.propTypes = {
   availableSupply: PropTypes.number.isRequired,
   marketCap: PropTypes.number.isRequired,
   priceChange1d: PropTypes.number.isRequired,
-  // marketCap: PropTypes.number.isRequired,
+  rank: PropTypes.number.isRequired,
   // totalVolume: PropTypes.number.isRequired,
   // priceChangePerDay: PropTypes.number.isRequired,
 };

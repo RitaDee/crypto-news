@@ -3,18 +3,21 @@ import PropTypes from 'prop-types';
 import { RiCloseLine } from 'react-icons/ri';
 import { useDispatch } from 'react-redux';
 import { coinsFilter } from '../Redux/coins/CoinsSlice';
+import styles from '../styles/Modal.module.css';
 
-const Modal = () => {
+const Modal = ({ isOpen, setIsOpen }) => {
   const dispatch = useDispatch();
   const handleClick = (e) => {
-    e.preventDefaul();
+    e.preventDefault();
     const target = e.currentTarget.id;
     dispatch(coinsFilter(target));
     setIsOpen(false);
   };
   return (
     <>
-      <div onClick={() => setIsOpen(false)} />
+      {isOpen && (
+        <button type="button" aria-label="search" className={styles.overlay} onClick={() => setIsOpen(false)} />
+      )}
       <div className={styles.centered}>
         <div className={styles.modal}>
           <div className={styles.modalHeader}>
@@ -76,6 +79,11 @@ const Modal = () => {
       </div>
     </>
   );
+};
+
+Modal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  setIsOpen: PropTypes.func.isRequired,
 };
 
 export default Modal;

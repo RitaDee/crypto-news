@@ -1,21 +1,33 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { FcSettings } from 'react-icons/fc';
+import styles from 'src/css/Navbar.module.css';
+import logo from '../images/logo.png';
+import Modal from './Modal';
 
-const Navbar = () => (
-  <div>
-    <nav>
-      <h1>Coins</h1>
-
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/details">Details</Link>
-        </li>
-      </ul>
-    </nav>
-  </div>
-);
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <>
+      <header className={styles.header}>
+        <NavLink to="/" className={styles.icondiv}>
+          <img src={logo} alt="planet" className={styles.icon} />
+        </NavLink>
+        <span className={styles.navspan}>CRYPTO SAGE</span>
+        <nav>
+          <ul className={styles.navItems}>
+            <NavLink>
+              <FcSettings
+                className={styles.settingicon}
+                onClick={() => setIsOpen(true)}
+              />
+            </NavLink>
+          </ul>
+        </nav>
+      </header>
+      {isOpen && <Modal setIsOpen={setIsOpen} />}
+    </>
+  );
+}
 
 export default Navbar;

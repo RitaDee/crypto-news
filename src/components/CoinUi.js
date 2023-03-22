@@ -6,7 +6,10 @@ import { BiRightArrowCircle } from 'react-icons/bi';
 import { fetchCoinsDetail } from '../Redux/details/CoinsDetailsSlice';
 
 const CoinUi = ({ image, id, currentPrice }) => {
+  console.log(image, id, currentPrice);
   const dispatch = useDispatch();
+
+  // const navigate = useNavigate();
 
   const handleClick = () => {
     dispatch(fetchCoinsDetail(id));
@@ -15,7 +18,7 @@ const CoinUi = ({ image, id, currentPrice }) => {
   return (
     <div className="CoinUi">
       <div>
-        <NavLink to="/coindetail">
+        <NavLink to={`/coins/${id}`}>
           <BiRightArrowCircle className="icon" onClick={handleClick} />
         </NavLink>
         <img alt="coin" src={image} />
@@ -31,7 +34,7 @@ const CoinUi = ({ image, id, currentPrice }) => {
 
 CoinUi.propTypes = {
   image: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   currentPrice: PropTypes.number.isRequired,
 };
 

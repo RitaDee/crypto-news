@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false';
+const url = 'https://api.coinstats.app/public/v1/coins';
 
 const initialState = {
   list: [],
@@ -8,8 +8,8 @@ const initialState = {
 };
 
 export const fetchCoins = createAsyncThunk('coins/fetch', async () => {
-  const response = fetch(url);
-  const data = await response.json();
+  const response = await fetch(url);
+  const data = response.json();
   return data;
 });
 
@@ -27,7 +27,7 @@ const coinsSlice = createSlice({
       .addCase(fetchCoins.fulfilled, (state, action) => ({
         ...state,
         isFetching: false,
-        list: action.payload,
+        list: action.payload.coins,
       }))
       .addCase(fetchCoins.pending, (state) => ({
         ...state,

@@ -6,8 +6,9 @@ const initialState = {
 };
 
 export const fetchCoinsDetail = createAsyncThunk('coinsDetails/fetch', async (id) => {
-  const response = fetch(`https://api.coingecko.com/api/v3/coins/${id}`);
-  const data = await response.json();
+  const response = await fetch(`https://api.coinstats.app/public/v1/coins${id}`);
+  const data = response.json();
+  console.log('Hello', data);
   return data;
 });
 

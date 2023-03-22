@@ -11,7 +11,7 @@ const CoinDetails = () => {
       </div>
       <div className="coinsDetails">
         <CoinDetailsUi
-          currentPrice={coins.market_data.current_price.usd}
+          currentPrice={coins.market_data.price.usd}
           Alltimehigh={coins.market_data.ath.usd}
           Alltimelow={coins.market_data.atl.usd}
           fullyDilutedValuation={coins.market_data.fully_diluted_valuation.usd}

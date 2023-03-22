@@ -12,8 +12,8 @@ const CoinDetails = () => {
       <div className="coinsDetails">
         <CoinDetailsUi
           currentPrice={coin.price}
-          Alltimehigh={coin.totalSupply}
-          Alltimelow={coin.availableSupply}
+          availableSupply={coin.availableSupply}
+          marketCap={coin.marketCap}
           // fullyDilutedValuation={coin.market_data.fully_diluted_valuation.usd}
           // marketCap={coin.market_data.market_cap.usd}
           // totalVolume={coin.market_data.total_volume}

@@ -11,6 +11,7 @@ const CoinDetails = () => {
       </div>
       <div className="coinsDetails">
         <CoinDetailsUi
+          coinIcon={coin.icon}
           currentPrice={coin.price}
           availableSupply={coin.availableSupply}
           marketCap={coin.marketCap}

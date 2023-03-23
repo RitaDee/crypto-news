@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../styles/CoinDetailsUi.module.css';
+import '../styles/CoinDetailsUi.module.css';
 
 const CoinDetailsUi = ({
   coinIcon,
@@ -11,10 +11,10 @@ const CoinDetailsUi = ({
   rank,
 }) => (
   <div className="coinD">
-    <div className="icon">
+    <div className="coindetaildiv">
       <h1>{coinIcon}</h1>
     </div>
-    <div className={styles.coindetaildiv}>
+    <div className="coindetaildiv">
       <h1>Current Price</h1>
       <div>
         <h1>

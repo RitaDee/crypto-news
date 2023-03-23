@@ -14,14 +14,14 @@ const CoinUi = ({ image, id, currentPrice }) => {
   };
 
   return (
-    <div className="CoinUi">
-      <div>
+    <div className="coindiv">
+      <div className="coin">
         <NavLink to={`/coins/${id}`}>
           <BiRightArrowCircle className="icon" onClick={handleClick} />
         </NavLink>
-        <img alt="coin" src={image} />
-        <h1>{id}</h1>
-        <h1>
+        <img alt="coin" src={image} className="img" />
+        <h1 className="name">{id}</h1>
+        <h1 className="name">
           {currentPrice}
           $
         </h1>

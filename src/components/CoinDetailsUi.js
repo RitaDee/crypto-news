@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../styles/CoinDetailsUi.module.css';
 
 const CoinDetailsUi = ({
   currentPrice,
@@ -9,7 +10,7 @@ const CoinDetailsUi = ({
   rank,
 }) => (
   <div className="coinD">
-    <div>
+    <div className={styles.coindetaildiv}>
       <h1>Current Price</h1>
       <div>
         <h1>
@@ -18,27 +19,27 @@ const CoinDetailsUi = ({
         </h1>
       </div>
     </div>
-    <div>
+    <div className="coindetaildiv">
       <h1>Available Supply</h1>
-      <div>
+      <div className="subcoindetaildiv">
         <h1>{availableSupply}</h1>
       </div>
     </div>
-    <div>
+    <div className="coindetaildiv">
       <h1>Market Cap</h1>
-      <div>
+      <div className="subcoindetaildiv">
         <h1>{marketCap}</h1>
       </div>
-      <div>
+      <div className="coindetaildiv">
         <h1>Price Change Per Day</h1>
-        <div>
+        <div className="subcoindetaildiv">
           <h1>{priceChange1d}</h1>
         </div>
       </div>
     </div>
-    <div>
+    <div className="coindetaildiv">
       <h1>Rank</h1>
-      <div>
+      <div className="subcoindetaildiv">
         <h1>{rank}</h1>
       </div>
     </div>

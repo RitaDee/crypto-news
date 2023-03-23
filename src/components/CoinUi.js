@@ -22,8 +22,8 @@ const CoinUi = ({ image, id, currentPrice }) => {
         <img alt="coin" src={image} className="img" />
         <h1 className="name">{id}</h1>
         <h1 className="name">
-          {currentPrice}
           $
+          {currentPrice}
         </h1>
       </div>
     </div>

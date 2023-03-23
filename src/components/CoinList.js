@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import CoinUi from './CoinUi';
+import '../styles/CoinList.css';
 
 const CoinList = () => {
   const coins = useSelector((store) => store.coins.list);

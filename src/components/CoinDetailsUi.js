@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styles from '../styles/CoinDetailsUi.module.css';
 
 const CoinDetailsUi = ({
+  coinIcon,
   currentPrice,
   availableSupply,
   marketCap,
@@ -10,6 +11,9 @@ const CoinDetailsUi = ({
   rank,
 }) => (
   <div className="coinD">
+    <div className="icon">
+      <h1>{coinIcon}</h1>
+    </div>
     <div className={styles.coindetaildiv}>
       <h1>Current Price</h1>
       <div>
@@ -47,6 +51,7 @@ const CoinDetailsUi = ({
 );
 
 CoinDetailsUi.propTypes = {
+  coinIcon: PropTypes.string.isRequired,
   currentPrice: PropTypes.number.isRequired,
   availableSupply: PropTypes.number.isRequired,
   marketCap: PropTypes.number.isRequired,

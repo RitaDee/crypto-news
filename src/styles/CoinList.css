@@ -1,25 +1,17 @@
 .coinsdiv {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);;
+  /* updated */
   padding-block: 1rem;
-
-  /* width: min(95%, 70rem); */
   margin-inline: auto;
   height: 10vh;
   cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    rgba(100, 174, 186, 1) 0%,
-    rgba(122, 172, 181, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(100, 174, 186, 1) 0%, rgba(122, 172, 181, 1) 100%);
 }
 
 .coin-div {
-  background: linear-gradient(
-    90deg,
-    rgba(100, 174, 186, 1) 0%,
-    rgba(122, 172, 181, 1) 100%
-  );
+  background-color: #fff;
+  /* added */
   margin-top: -0.8rem;
   font-size: 10px;
 }

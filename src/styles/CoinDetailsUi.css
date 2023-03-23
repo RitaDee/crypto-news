@@ -1,17 +1,22 @@
-.coindetail {
+.coinsdiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-block: 1rem;
+  margin-inline: auto;
+  height: 10vh;
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(100, 174, 186, 1) 0%, rgba(122, 172, 181, 1) 100%);
+}
+
+.coin-div {
+  background-color: #fff;
+  margin-top: -0.8rem;
+  font-size: 10px;
   width: 100%;
 }
 
-.coindetaildiv {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  gap: 1rem;
-}
-
-.subcoindetaildiv {
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  gap: 1rem;
+.coinsheading {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  color: antiquewhite;
 }

@@ -11,7 +11,7 @@ const CoinList = () => {
       <div className="conHeading">
         <h2>Crypto Market Prices</h2>
       </div>
-      <div>
+      <div className="coinsdiv">
         {coins.map((coin) => (
           <CoinUi
             id={coin.id}

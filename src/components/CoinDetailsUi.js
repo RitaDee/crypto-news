@@ -10,7 +10,7 @@ const CoinDetailsUi = ({
   priceChange1d,
   rank,
 }) => (
-  <div className="coinD">
+  <div className="coindetail">
     <div className="coindetaildiv">
       <h1>{coinIcon}</h1>
     </div>

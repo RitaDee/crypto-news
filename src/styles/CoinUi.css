@@ -16,14 +16,27 @@
   color: #faebd7;
 }
 
-.coindiv:nth-child(2n) {
+.coindiv {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  /* gap: 25px; */
+  row-gap: 32px;
+  width: 100%;
+  background-color: purple;
+}
+
+.coin {
+  background-color: aliceblue;
+}
+
+/* .coindiv:nth-child(2n) {
   background: rgb(23, 33, 53);
   background: linear-gradient(90deg, rgba(23, 33, 53, 1) 0%, rgba(33, 47, 74, 1) 100%);
   padding: 1rem;
 }
 
 .coindiv:nth-child(2n + 1) {
-  background: rgb(33, 47, 74);
-  background: linear-gradient(90deg, rgba(33, 47, 74, 1) 0%, rgba(23, 33, 53, 1) 100%);
+  background: rgb(88, 140, 242);
+  background: linear-gradient(90deg, rgb(173, 193, 234) 0%, rgba(23, 33, 53, 1) 100%);
   padding: 1rem;
-}
+} */

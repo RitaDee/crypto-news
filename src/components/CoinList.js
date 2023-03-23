@@ -7,8 +7,8 @@ const CoinList = () => {
   const coins = useSelector((store) => store.coins.list);
 
   return (
-    <div className="coinDiv">
-      <div className="conHeading">
+    <div className="coin-div">
+      <div className="coinsheading">
         <h2>Crypto Market Prices</h2>
       </div>
       <div className="coinsdiv">

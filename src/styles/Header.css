@@ -1,5 +1,6 @@
 .headerdiv {
   display: flex;
+  margin: 0;
   padding: 2rem;
   background: rgb(17, 63, 154);
   background: linear-gradient(90deg, rgb(115, 144, 202) 0%, rgba(23, 33, 53, 1) 100%);
@@ -9,14 +10,11 @@
   width: 30%;
 }
 
-.subdiv {
-  margin: auto;
-}
-
 .headerh1 {
   font-weight: 800;
   font-size: 14px;
   line-height: 5px;
+  margin: 0;
   color: aliceblue;
 }
 

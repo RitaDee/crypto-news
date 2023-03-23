@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 const CoinHeader = () => {
   const coinsDetails = useSelector((store) => store.coinsDetails.list);
   return (
-    <div className={styles.coinHeader}>
+    <div>
       <img alt="cryptocurrencies" src={coinsDetails.image.large} />
       <div>
         <h1>{coinsDetails.name}</h1>

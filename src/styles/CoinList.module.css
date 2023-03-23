@@ -1,21 +1,20 @@
 .coin_container {
-  display: flex;
-  flex-wrap: wrap;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
-  /* padding-block: 1rem;
-  margin-inline: auto; */
-  height: 10vh;
   cursor: pointer;
-  background-color: purple;
+  background: rgb(17, 63, 154);
+    background: linear-gradient(90deg, rgb(115, 144, 202) 0%, rgba(23, 33, 53, 1) 100%);
+    /* padding: 1rem; */
+
   /* background: linear-gradient(90deg, rgba(100, 174, 186, 1) 0%, rgba(122, 172, 181, 1) 100%); */
 }
 
-.coin-div {
-  background-color: #fff;
+.coinsdiv {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  /* gap: 12px; */
+  /* row-gap: 32px; */
   /* margin-top: -0.8rem; */
   font-size: 10px;
-  width: 100%;
+   width: 100%; 
 }
 
 .coinsheading {

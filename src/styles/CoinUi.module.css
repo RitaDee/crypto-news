@@ -16,31 +16,18 @@
   color: #faebd7;
 }
 
-.container {
-  margin-top: 100px;
-  display: flex;
-    width: 100%;
-    background-color: purple;
-}
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
-  margin: 0 auto;
-  justify-content: space-between;
-  column-gap: 124px;} */
-
 .coinCard {
-  background-color: aliceblue;
-  width: 25%;
+  width: 19.8rem;
 } 
 
-/* .coindiv:nth-child(2n) {
-  background: rgb(23, 33, 53);
-  background: linear-gradient(90deg, rgba(23, 33, 53, 1) 0%, rgba(33, 47, 74, 1) 100%);
+.coinCard:nth-child(2n) {
+  background: rgb(17, 63, 154);
+  background: linear-gradient(90deg, rgb(115, 144, 202) 0%, rgba(23, 33, 53, 1) 100%);
   padding: 1rem;
 }
 
-.coindiv:nth-child(2n + 1) {
-  background: rgb(88, 140, 242);
-  background: linear-gradient(90deg, rgb(173, 193, 234) 0%, rgba(23, 33, 53, 1) 100%);
+ .coinCard:nth-child(2n + 1) {
+  background: rgb(23, 33, 53);
+  background: linear-gradient(90deg, rgb(4, 62, 177) 0%, rgba(33, 47, 74, 1) 100%);
   padding: 1rem;
-} */ 
+}

@@ -9,6 +9,7 @@ const CoinHeader = () => {
       <div>
         <h1>{coinsDetails.name}</h1>
         <p>{coinsDetails.market_data.current_price.usd}</p>
+        $
       </div>
     </div>
   );

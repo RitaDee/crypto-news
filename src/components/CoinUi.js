@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { BiRightArrowCircle } from 'react-icons/bi';
 import { fetchCoinsDetail } from '../Redux/details/CoinsDetailsSlice';
-import '../styles/CoinUi.module.css';
+import '../styles/CoinUi.css';
 
 const CoinUi = ({ image, id, currentPrice }) => {
   const dispatch = useDispatch();

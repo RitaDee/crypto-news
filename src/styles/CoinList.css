@@ -1,7 +1,6 @@
 .coinsdiv {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);;
-  /* updated */
+  grid-template-columns: repeat(2, 1fr);
   padding-block: 1rem;
   margin-inline: auto;
   height: 10vh;
@@ -11,9 +10,9 @@
 
 .coin-div {
   background-color: #fff;
-  /* added */
   margin-top: -0.8rem;
   font-size: 10px;
+  width: 100%;
 }
 
 .coinsheading {

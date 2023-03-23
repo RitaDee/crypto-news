@@ -18,12 +18,12 @@
 
 .coindiv:nth-child(4n),
 .coindiv:nth-of-type(4n + 1) {
-  background: rgb(100, 174, 186);
+  background: rgb(110, 100, 186);
   background:
     linear-gradient(
       90deg,
-      rgba(100, 174, 186, 1) 0%,
-      rgba(122, 172, 181, 1) 100%
+      rgb(104, 100, 186) 0%,
+      rgb(2, 27, 80) 100%
     );
   padding-left: 1rem;
   padding-top: 0.4rem;

@@ -17,13 +17,13 @@
 }
 
 .coindiv:nth-child(2n) {
-  background: rgb(78, 64, 125);
-  background: linear-gradient(90deg, rgba(78, 64, 125, 1) 0%, rgba(119, 94, 172, 1) 100%);
+  background: rgb(23, 33, 53);
+  background: linear-gradient(90deg, rgba(23, 33, 53, 1) 0%, rgba(33, 47, 74, 1) 100%);
   padding: 1rem;
 }
 
 .coindiv:nth-child(2n + 1) {
-  background: rgb(119, 94, 172);
-  background: linear-gradient(90deg, rgba(119, 94, 172, 1) 0%, rgba(78, 64, 125, 1) 100%);
+  background: rgb(33, 47, 74);
+  background: linear-gradient(90deg, rgba(33, 47, 74, 1) 0%, rgba(23, 33, 53, 1) 100%);
   padding: 1rem;
 }

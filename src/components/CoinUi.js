@@ -8,8 +8,6 @@ import { fetchCoinsDetail } from '../Redux/details/CoinsDetailsSlice';
 const CoinUi = ({ image, id, currentPrice }) => {
   const dispatch = useDispatch();
 
-  // const navigate = useNavigate();
-
   const handleClick = () => {
     dispatch(fetchCoinsDetail(id));
   };

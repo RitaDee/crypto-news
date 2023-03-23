@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { BiRightArrowCircle } from 'react-icons/bi';
 import { fetchCoinsDetail } from '../Redux/details/CoinsDetailsSlice';
-import '../styles/CoinUi.css';
+import styles from '../styles/CoinUi.module.css';
 
 const CoinUi = ({ image, id, currentPrice }) => {
   const dispatch = useDispatch();
@@ -14,19 +14,19 @@ const CoinUi = ({ image, id, currentPrice }) => {
   };
 
   return (
-    <div className="coindiv">
-      <div className="coin">
-        <NavLink to={`/coins/${id}`}>
-          <BiRightArrowCircle className="icon" onClick={handleClick} />
-        </NavLink>
-        <img alt="coin" src={image} className="img" />
-        <h1 className="name">{id}</h1>
-        <h1 className="name">
-          $
-          {currentPrice}
-        </h1>
-      </div>
+  // <div className={styles.container}>
+    <div className={styles.coinCard}>
+      <NavLink to={`/coins/${id}`}>
+        <BiRightArrowCircle className={styles.icon} onClick={handleClick} />
+      </NavLink>
+      <img alt="coin" src={image} className={styles.img} />
+      <h1 className="name">{id}</h1>
+      <h1 className="name">
+        $
+        {currentPrice}
+      </h1>
     </div>
+  // </div>
   );
 };
 

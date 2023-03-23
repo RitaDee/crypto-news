@@ -1,4 +1,4 @@
-.img {
+ .img {
   height: 10vh;
   width: 80px;
 }
@@ -16,18 +16,22 @@
   color: #faebd7;
 }
 
-.coindiv {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
-  /* gap: 25px; */
-  row-gap: 32px;
-  width: 100%;
-  background-color: purple;
+.container {
+  margin-top: 100px;
+  display: flex;
+    width: 100%;
+    background-color: purple;
 }
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(327px, 2fr));
+  margin: 0 auto;
+  justify-content: space-between;
+  column-gap: 124px;} */
 
-.coin {
+.coinCard {
   background-color: aliceblue;
-}
+  width: 25%;
+} 
 
 /* .coindiv:nth-child(2n) {
   background: rgb(23, 33, 53);
@@ -39,4 +43,4 @@
   background: rgb(88, 140, 242);
   background: linear-gradient(90deg, rgb(173, 193, 234) 0%, rgba(23, 33, 53, 1) 100%);
   padding: 1rem;
-} */
+} */ 

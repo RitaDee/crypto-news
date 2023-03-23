@@ -18,8 +18,8 @@ const CoinDetailsUi = ({
       <h1>Current Price</h1>
       <div>
         <h1>
-          {currentPrice}
           $
+          {currentPrice}
         </h1>
       </div>
     </div>
@@ -34,11 +34,11 @@ const CoinDetailsUi = ({
       <div className="subcoindetaildiv">
         <h1>{marketCap}</h1>
       </div>
-      <div className="coindetaildiv">
-        <h1>Price Change Per Day</h1>
-        <div className="subcoindetaildiv">
-          <h1>{priceChange1d}</h1>
-        </div>
+    </div>
+    <div className="coindetaildiv">
+      <h1>Price Change Per Day</h1>
+      <div className="subcoindetaildiv">
+        <h1>{priceChange1d}</h1>
       </div>
     </div>
     <div className="coindetaildiv">

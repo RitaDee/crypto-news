@@ -1,10 +1,6 @@
 .headerdiv {
   display: flex;
-  padding: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
+  padding: 2rem;
   background: rgb(17, 63, 154);
   background: linear-gradient(90deg, rgb(115, 144, 202) 0%, rgba(23, 33, 53, 1) 100%);
 }

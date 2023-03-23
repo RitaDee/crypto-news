@@ -20,17 +20,15 @@
   width: 41.7%;
   color: whitesmoke;
   font-size: 6px;
-}
-
-.coinCard:nth-child(3n+3) {
-  background: rgb(17, 63, 154);
-  background: linear-gradient(90deg, rgb(115, 144, 202) 0%, rgba(23, 33, 53, 1) 100%);
+  background: rgb(23, 33, 53);
+  background: linear-gradient(90deg, rgb(4, 62, 177) 0%, rgba(33, 47, 74, 1) 100%);
   padding: 1rem;
 }
 
-.coinCard:nth-child(2) {
-  background: rgb(23, 33, 53);
-  background: linear-gradient(90deg, rgb(4, 62, 177) 0%, rgba(33, 47, 74, 1) 100%);
+.coinCard:nth-child(4n+2),
+.coinCard:nth-child(4n+3) {
+  background: rgb(17, 63, 154);
+  background: linear-gradient(90deg, rgb(115, 144, 202) 0%, rgba(23, 33, 53, 1) 100%);
   padding: 1rem;
 }
 

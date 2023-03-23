@@ -4,6 +4,7 @@ const url = 'https://api.coinstats.app/public/v1/coins';
 
 const initialState = {
   list: [],
+  immutableList: [],
   isFetching: false,
 };
 
@@ -20,7 +21,7 @@ const coinsSlice = createSlice({
     coinsFilter: (state, action) => {
       const newState = { ...state };
       const number = action.payload;
-      newState.list = state.list.filter((item) => item.price > number);
+      newState.list = state.immutableList.filter((item) => item.price > number);
       return newState;
     },
   },
@@ -30,6 +31,7 @@ const coinsSlice = createSlice({
         ...state,
         isFetching: false,
         list: action.payload.coins,
+        immutableList: action.payload.coins,
       }))
       .addCase(fetchCoins.pending, (state) => ({
         ...state,

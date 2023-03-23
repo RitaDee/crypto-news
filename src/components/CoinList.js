@@ -9,7 +9,7 @@ const CoinList = () => {
   return (
     <div className={styles.coin_container}>
       <div className={styles.coinsheading}>
-        <h2>Crypto Market Prices</h2>
+        <h2 className={styles.h}>Crypto Market Prices</h2>
       </div>
       <div className={styles.coinsdiv}>
         {coins.map((coin) => (

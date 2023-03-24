@@ -18,13 +18,14 @@ function MyFallbackComponent({ error, resetErrorBoundary }) {
 
 describe('CoinsDetailsSlice', () => {
   it('renders correctly', () => {
-    const tree = renderer(
-      <ErrorBoundary FallbackComponent={MyFallbackComponent}>
-        <Provider store={store}>
-          <CoinsDetailsSlice />
-        </Provider>
-      </ErrorBoundary>,
-    )
+    const tree = renderer
+      .create(
+        <ErrorBoundary FallbackComponent={MyFallbackComponent}>
+          <Provider store={store}>
+            <CoinsDetailsSlice />
+          </Provider>
+        </ErrorBoundary>,
+      )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

@@ -89,7 +89,7 @@ npm install
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Shaaibu Suleiman**
+👤 **Rita Daniel**
 
 - GitHub: [@githubhandle](https://github.com/RitaDee)
 - Twitter: [@twitterhandle](https://twitter.com/durdana_dee)

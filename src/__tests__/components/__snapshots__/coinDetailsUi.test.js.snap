@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoinDetailsUi renders correctly for reserved state 1`] = `
+<div
+  className="coindetail"
+>
+  <div
+    className="coindetaildiv"
+  >
+    <h1 />
+  </div>
+  <div
+    className="coindetaildiv"
+  >
+    <h1>
+      Current Price
+    </h1>
+    <div>
+      <h1>
+        $
+      </h1>
+    </div>
+  </div>
+  <div
+    className="coindetaildiv"
+  >
+    <h1>
+      Available Supply
+    </h1>
+    <div
+      className="subcoindetaildiv"
+    >
+      <h1 />
+    </div>
+  </div>
+  <div
+    className="coindetaildiv"
+  >
+    <h1>
+      Market Cap
+    </h1>
+    <div
+      className="subcoindetaildiv"
+    >
+      <h1 />
+    </div>
+  </div>
+  <div
+    className="coindetaildiv"
+  >
+    <h1>
+      Price Change Per Day
+    </h1>
+    <div
+      className="subcoindetaildiv"
+    >
+      <h1 />
+    </div>
+  </div>
+  <div
+    className="coindetaildiv"
+  >
+    <h1>
+      Rank
+    </h1>
+    <div
+      className="subcoindetaildiv"
+    >
+      <h1 />
+    </div>
+  </div>
+</div>
+`;

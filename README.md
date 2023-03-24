@@ -48,7 +48,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://coinc.netlify.app/)
+- [Live Demo Link](https://rtcoin.netlify.app/)
 
 ## 📹 Video Description
 

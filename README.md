@@ -1,4 +1,4 @@
-# Cryptocurrency app
+# Crypto News
 <a name="readme-top"></a>
 
 <!-- TABLE OF CONTENTS -->
@@ -27,7 +27,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Cryptocurrency app] <a name="about-project"></a>
+# 📖 [RTCOIN] <a name="about-project"></a>
 
 
 **[Cryptocurrency app]**  This is a cryptocurrency app that fetches crypto`s from an API and the user can search for a specific coin and see the details of the coin.

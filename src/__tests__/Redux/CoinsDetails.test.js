@@ -2,6 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import PropTypes from 'prop-types';
+import { ErrorBoundary } from 'react-error-boundary';
 import store from '../../Redux/store';
 import CoinsDetailsSlice from '../../Redux/details/CoinsDetailsSlice';
 

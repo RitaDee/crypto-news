@@ -1,0 +1,37 @@
+.coindetail {
+  color: whitesmoke;
+  background: rgb(23, 33, 53);
+  background:
+    linear-gradient(
+      90deg,
+      rgb(4, 62, 177) 0%,
+      rgba(33, 47, 74, 1) 100%
+    );
+  font-size: 9px;
+}
+
+.coindetaildiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 4px;
+}
+
+.coindetaildiv:nth-child(2n) {
+  background: rgb(17, 63, 154);
+  background:
+    linear-gradient(
+      90deg,
+      rgb(115, 144, 202) 0%,
+      rgba(23, 33, 53, 1) 100%
+    );
+}
+
+.subcoindetaildiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 1rem;
+}

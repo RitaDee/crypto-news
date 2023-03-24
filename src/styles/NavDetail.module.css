@@ -6,16 +6,17 @@ header {
 }
 
 .span {
- font-size: 16px;
- padding-right: 3rem;
- font-weight: 700;
- padding-bottom: 0rem;
- /* margin-top: 2rem; */
+  font-size: 16px;
+  padding-right: 3rem;
+  font-weight: 700;
+  padding-bottom: 0;
+
+  /* margin-top: 2rem; */
 }
 
 .icon2 {
   padding-top: 0.1rem;
-  padding-bottom: 0rem;
+  padding-bottom: 0;
   margin-left: -8rem;
   height: 17px;
   width: auto;

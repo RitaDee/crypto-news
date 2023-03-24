@@ -48,7 +48,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://peppy-frangollo-8cc73c.netlify.app/)
+- [Live Demo Link](https://coinc.netlify.app/)
 
 ## 📹 Video Description
 

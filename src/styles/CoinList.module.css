@@ -21,3 +21,9 @@ h2 {
   text-align: center;
   background: rgb(17, 63, 154);
 }
+
+@media only screen and (min-width: 768px) {
+  .coinsdiv {
+    justify-content: space-around;
+  }
+}

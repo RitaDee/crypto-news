@@ -52,7 +52,7 @@
 
 ## 📹 Video Description
 
-- [Video Description Link](https://www.loom.com/share/b692978ce32945e1983fe405715dade7)
+- [Video Description Link](https://www.loom.com/share/13401e0197b64c9a83a587eee9b171ba)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,7 +72,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-1. Go to the [repository page](https://github.com/shaaibu7/cryptocurrency-app).
+1. Go to the [repository page](https://github.com/RitaDee/crypto-news.git).
 2. Press the "Code" button and copy the link.
 3. Clone it using git command `git clone <link>`.
 
@@ -91,9 +91,9 @@ npm install
 
 👤 **Shaaibu Suleiman**
 
-- GitHub: [@githubhandle](https://github.com/shaaibu7)
-- Twitter: [@twitterhandle](https://twitter.com/shaaibu)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/shaaibu)
+- GitHub: [@githubhandle](https://github.com/RitaDee)
+- Twitter: [@twitterhandle](https://twitter.com/durdana_dee)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/rita-daniel)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -137,7 +137,5 @@ I would like to thank Microverse for the great resources shared.
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

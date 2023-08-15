@@ -87,7 +87,6 @@ npm install
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Rita Daniel**
 
 - GitHub: [@githubhandle](https://github.com/RitaDee)
